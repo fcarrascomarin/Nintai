@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NINTAI | Brilla con fuerza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">NINTAI</div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#productos">Tienda</a>
+        <a href="#carrito">Carrito 🛒</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Brilla con fuerza.</h1>
+    <p>Accesorios que te ayudan a brillar día a día.</p>
+    <h2>Modelos variados con envíos a todo Chile</h2>
+</section>
+
+<section class="productos" id="productos">
+    <h2>Lo que está brillando ahora</h2>
+    <div class="grid">
+
+        <div class="card">
+            <img src="./img/img1.png" alt="">
+            <h3>Cadena Veneciana</h3>
+            <p class="precio">$13990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img2.png" alt="">
+            <h3>Set Aros Minimalista Estrellas Circones</h3>
+            <p class="precio">$26990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/img3.png" alt="">
+            <h3>Aro Serpiente</h3>
+            <p class="precio">$12990</p>
+            <button onclick="agregarAlCarrito('Aro Serpiente',12990)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/img4.png" alt="">
+            <h3>Conjunto Luna</h3>
+            <p class="precio">$24990</p>
+            <button onclick="agregarAlCarrito('Conjunto Luna',24990)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/img5.png" alt="">
+            <h3>Conjunto Mariposa</h3>
+            <p class="precio">$18990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img6.png" alt="">
+            <h3>Aro Flor Circones</h3>
+            <p class="precio">$16990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img7.png" alt="">
+            <h3>Anillo Ajustable Corazones Circones Rubi</h3>
+            <p class="precio">$20990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img8.png" alt="">
+            <h3>Anillo Ajustable Media Luna</h3>
+            <p class="precio">$23990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+
+
+        <div class="card">
+            <img src="./img/img9.png" alt="">
+            <h3>Argollas Bali Trenzada 16 mm</h3>
+            <p class="precio">$14990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img10.png" alt="">
+            <h3>Argolla Atrapasueños 16 mm</h3>
+            <p class="precio">$16990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+<div class="card">
+            <img src="./img/img11.png" alt="">
+            <h3>Argolla Nudo 16 mm</h3>
+            <p class="precio">$14990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img12.png" alt="">
+            <h3>Aro Estrella de Mar 12 mm</h3>
+            <p class="precio">$14990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img13.png" alt="">
+            <h3>Argolla Túnel</h3>
+            <p class="precio">$14990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        <div class="card">
+            <img src="./img/img14.png" alt="">
+            <h3>Argolla lisa</h3>
+            <p class="precio">$14990</p>
+            <button onclick="agregarAlCarrito('Argollas Bali',14990)">Agregar</button>
+        </div>
+        
+        
+
+    </div>
+</section>
+
+<!-- CARRITO -->
+<section class="carrito" id="carrito">
+    <h2>Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p class="total">Total: $<span id="total">0</span></p>
+    <button class="btn-wsp" onclick="enviarWhatsApp()">Finalizar por WhatsApp</button>
+</section>
+
+<footer>
+    <p>© 2026 NINTAI</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
