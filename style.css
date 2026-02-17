@@ -21,29 +21,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
+    padding: 0 10%;
+    height: 100px; /* 🔥 Altura controlada */
     border-bottom: 1px solid #eeeeee;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
+
 
 /* LOGO */
 .logo {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .logo img {
-    height: 75px; /* 🔥 AUMENTADO */
+    height: 70px; /* 🔥 más grande pero proporcional */
     width: auto;
-    object-fit: contain;
+    display: block; /* 🔥 elimina espacio fantasma inline */
 }
+
 
 /* NAV */
 nav {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 nav a {
@@ -221,11 +223,11 @@ footer {
 @media (max-width: 768px) {
 
     header {
-        padding: 10px 6%;
+        height: 80px;
     }
 
     .logo img {
-        height: 60px; /* 🔥 Más pequeño en móvil */
+        height: 55px;
     }
 
     nav {
@@ -246,6 +248,7 @@ footer {
         padding: 60px 10%;
     }
 }
+
 
 
 
