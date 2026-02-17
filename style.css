@@ -80,6 +80,10 @@ nav a:hover {
     font-weight: 300;
     margin-bottom: 30px;
 }
+.hero img {
+    align-items: center;
+    width: 200px;
+}
 
 .btn {
     background: #111;
