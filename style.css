@@ -18,7 +18,7 @@ body {
 ========================= */
 header {
     background: #d9d3c0cb;
-    display: inline;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
