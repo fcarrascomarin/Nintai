@@ -35,7 +35,7 @@ header {
 }
 
 .logo img {
-    height: 50px; /* 🔥 más grande pero proporcional */
+    height: 85px; /* 🔥 más grande pero proporcional */
     width: auto;
     display: block; /* 🔥 elimina espacio fantasma inline */
 }
