@@ -250,6 +250,16 @@ footer {
 }
 
 
+#watermark
+{
+ position:fixed;
+ bottom:5px;
+ right:5px;
+ opacity:0.5;
+ z-index:99;
+ color:white;
+}
+
 
 
 
