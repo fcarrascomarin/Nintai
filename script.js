@@ -1,3 +1,7 @@
+/* =========================
+   CARRITO JOYAS
+========================= */
+
 let carrito = [];
 let total = 0;
 
@@ -10,6 +14,8 @@ function agregarAlCarrito(nombre, precio) {
 function actualizarCarrito() {
     const lista = document.getElementById("lista-carrito");
     const totalElemento = document.getElementById("total");
+
+    if (!lista || !totalElemento) return;
 
     lista.innerHTML = "";
 
@@ -45,7 +51,7 @@ function enviarWhatsApp() {
 
     mensaje += `%0ATotal: $${total}`;
 
-    const numero = "+56923770543"; // 👈 PON TU NÚMERO CON CÓDIGO CHILE
+    const numero = "56923770543"; // SIN +
     const url = `https://wa.me/${numero}?text=${mensaje}`;
 
     window.open(url, "_blank");
@@ -53,12 +59,9 @@ function enviarWhatsApp() {
 
 
 
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("navMenu");
-
-toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
+/* =========================
+   CARRITO PERFORACIONES
+========================= */
 
 let perforaciones = [];
 let totalPerforaciones = 0;
@@ -71,22 +74,35 @@ function agregarPerforacion(nombre, precio) {
 
 function actualizarCarritoPerforaciones() {
     const lista = document.getElementById("lista-perforaciones");
-    const total = document.getElementById("total-perforaciones");
+    const totalElemento = document.getElementById("total-perforaciones");
+
+    if (!lista || !totalElemento) return;
 
     lista.innerHTML = "";
 
-    perforaciones.forEach(item => {
+    perforaciones.forEach((item, index) => {
         const li = document.createElement("li");
-        li.textContent = `${item.nombre} - $${item.precio}`;
+        li.innerHTML = `
+            ${item.nombre} - $${item.precio}
+            <button onclick="eliminarPerforacion(${index})">X</button>
+        `;
         lista.appendChild(li);
     });
 
-    total.textContent = totalPerforaciones;
+    totalElemento.textContent = totalPerforaciones;
+}
+
+function eliminarPerforacion(index) {
+    totalPerforaciones -= perforaciones[index].precio;
+    perforaciones.splice(index, 1);
+    actualizarCarritoPerforaciones();
 }
 
 function enviarPerforaciones() {
-
-    const numeroEnfermera = "+56998920489"; // 🔥 número distinto
+    if (perforaciones.length === 0) {
+        alert("No hay perforaciones seleccionadas.");
+        return;
+    }
 
     let mensaje = "Hola, quiero agendar las siguientes perforaciones:%0A";
 
@@ -96,7 +112,25 @@ function enviarPerforaciones() {
 
     mensaje += `%0ATotal: $${totalPerforaciones}`;
 
-    window.open(`https://wa.me/${numeroEnfermera}?text=${mensaje}`);
+    const numeroEnfermera = "56998920489"; // SIN +
+    window.open(`https://wa.me/${numeroEnfermera}?text=${mensaje}`, "_blank");
 }
+
+
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navMenu");
+
+    if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    }
+});
 
 
