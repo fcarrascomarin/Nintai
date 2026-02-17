@@ -16,38 +16,40 @@ body {
 /* =========================
    HEADER
 ========================= */
-header {
+
+
+.header {
     background: #d9d3c0cb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    height: 100px; /* 🔥 Altura controlada */
     border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* LOGO */
-.logo {
-    display: block;
-    height: 100%;
-}
-
 .logo img {
     height: 70px;
-
+    display: block;
 }
 
-
-/* NAV */
-nav {
+/* MENU DESKTOP */
+.nav-menu {
     display: flex;
-    align-items: end;
-    height: 100%;
+    gap: 40px;
 }
 
-nav a {
-    margin-left: 25px;
+.nav-menu a {
     text-decoration: none;
     color: #111;
     font-weight: 500;
@@ -57,9 +59,19 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav a:hover {
+.nav-menu a:hover {
     opacity: 0.6;
 }
+
+/* HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
 
 /* =========================
    HERO
@@ -238,7 +250,7 @@ footer {
 ========================= */
 @media (max-width: 768px) {
 
-    header {
+    .nav-container {
         height: 80px;
     }
 
@@ -246,28 +258,26 @@ footer {
         height: 55px;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav a {
-        margin-left: 0;
-    }
-
-    .beneficios {
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: white;
+        width: 100%;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+        padding: 30px 0;
+        display: none;
+        border-top: 1px solid #eee;
     }
 
-    .identidad {
-        padding: 60px 10%;
+    .nav-menu.active {
+        display: flex;
     }
-    .carrito::after {
-        width: 180px;
-        height: 180px;
-        right: -40px;
-        opacity: 0.05;
+
+    .menu-toggle {
+        display: block;
     }
 }
 

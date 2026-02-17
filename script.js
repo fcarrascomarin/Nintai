@@ -45,11 +45,20 @@ function enviarWhatsApp() {
 
     mensaje += `%0ATotal: $${total}`;
 
-    const numero = "56923770543"; // 👈 PON TU NÚMERO CON CÓDIGO CHILE
+    const numero = "+56923770543"; // 👈 PON TU NÚMERO CON CÓDIGO CHILE
     const url = `https://wa.me/${numero}?text=${mensaje}`;
 
     window.open(url, "_blank");
 }
+
+
+
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navMenu");
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
 
 <script>
 const toggle = document.getElementById("menu-toggle");
@@ -59,4 +68,3 @@ toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 </script>
-
