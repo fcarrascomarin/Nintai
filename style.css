@@ -35,7 +35,7 @@ header {
 }
 
 .logo img {
-    height: 85px; /* 🔥 AUMENTADO */
+    height: 95px; /* 🔥 AUMENTADO */
     width: auto;
     object-fit: contain;
 }
@@ -246,5 +246,6 @@ footer {
         padding: 60px 10%;
     }
 }
+
 
 
