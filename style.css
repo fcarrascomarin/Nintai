@@ -29,7 +29,7 @@ header {
 
 /* LOGO */
 .logo {
-    display: flex;
+    display: block;
     align-items: center;
     height: 100%;
 }
