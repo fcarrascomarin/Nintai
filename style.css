@@ -54,7 +54,7 @@ header {
 /* NAV */
 nav {
     display: flex;
-    align-items: center;
+    align-items: end;
     height: 100%;
 }
 
