@@ -60,6 +60,46 @@ toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 
+let perforaciones = [];
+let totalPerforaciones = 0;
+
+function agregarPerforacion(nombre, precio) {
+    perforaciones.push({ nombre, precio });
+    totalPerforaciones += precio;
+    actualizarCarritoPerforaciones();
+}
+
+function actualizarCarritoPerforaciones() {
+    const lista = document.getElementById("lista-perforaciones");
+    const total = document.getElementById("total-perforaciones");
+
+    lista.innerHTML = "";
+
+    perforaciones.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nombre} - $${item.precio}`;
+        lista.appendChild(li);
+    });
+
+    total.textContent = totalPerforaciones;
+}
+
+function enviarPerforaciones() {
+
+    const numeroEnfermera = "+56998920489"; // 🔥 número distinto
+
+    let mensaje = "Hola, quiero agendar las siguientes perforaciones:%0A";
+
+    perforaciones.forEach(item => {
+        mensaje += `• ${item.nombre} - $${item.precio}%0A`;
+    });
+
+    mensaje += `%0ATotal: $${totalPerforaciones}`;
+
+    window.open(`https://wa.me/${numeroEnfermera}?text=${mensaje}`);
+}
+
+
 <script>
 const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");

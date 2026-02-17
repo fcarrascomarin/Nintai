@@ -158,12 +158,39 @@
         <div class="redes">
             <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/carepierce.ccp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Care.pierce</a> 
     <i class="fa-brands fa-square-facebook"></i> <a href="https://www.facebook.com/profile.php?id=61560853533899&ref=NONE_xav_ig_profile_page_web#"></a> 
-    <i class="fa-solid fa-calendar-days"></i> Agenda tu cita a domicilio
+    <i class="fa-solid fa-calendar-days"></i> Agenda tu cita a domicilio viernes,sábado y domingo
         </div>
 
         <p><i class="fa-solid fa-calendar-days"></i> Agenda tu cita a domicilio</p>
+        
+       <div class="grid">
+        <div class="card">
+            <h3>Perforación Lóbulo</h3>
+            <p class="precio">$15.000</p>
+            <button onclick="agregarPerforacion('Perforación Lóbulo', 15000)">
+                Agendar
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>Helix</h3>
+            <p class="precio">$20.000</p>
+            <button onclick="agregarPerforacion('Helix', 20000)">
+                Agendar
+            </button>
+        </div>
     </div>
+    </div>
+    </section>
+    <section class="carrito-perforaciones">
+    <h2>Agenda de Perforaciones</h2>
+    <ul id="lista-perforaciones"></ul>
+    <p class="total">Total: $<span id="total-perforaciones">0</span></p>
+    <button class="btn-wsp" onclick="enviarPerforaciones()">
+        Reservar por WhatsApp
+    </button>
 </section>
+
 
 
 

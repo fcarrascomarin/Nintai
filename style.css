@@ -185,6 +185,12 @@ body {
     gap: 20px;
 }
 
+
+.perforaciones img{
+    width: 200px;
+    text-align: center;
+}
+
 /* =========================
    CARRITO
 ========================= */
