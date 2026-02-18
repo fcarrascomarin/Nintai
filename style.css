@@ -265,21 +265,7 @@ body {
     padding: 12px 25px;
     cursor: pointer;
 }
-.carrito::after {
-    content: "";
-    position: absolute;
-    right: -50px; /* Ajusta posición horizontal */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px; /* 🔥 tamaño marca de agua */
-    height: 300px;
-    background-image: url("logo2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    opacity: 0.07; /* 🔥 intensidad marca de agua */
-    pointer-events: none; /* no interfiere con botones */
-}
+
 /* =========================
    FOOTER
 ========================= */
@@ -337,6 +323,7 @@ footer {
     }
 
 }
+
 
 
 
