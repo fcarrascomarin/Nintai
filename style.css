@@ -273,25 +273,29 @@ body {
 
 .slider {
     position: relative;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.slider img {
+.producto-img {
     width: 100%;
-    max-width: 250px;
+    max-width: 260px;   /* 🔥 tamaño real controlado */
     height: auto;
+    display: block;
 }
 
 .slider button {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background: rgba(0,0,0,0.4);
     color: white;
     border: none;
-    font-size: 18px;
     padding: 6px 10px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .prev {
