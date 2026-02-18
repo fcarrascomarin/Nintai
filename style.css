@@ -107,17 +107,27 @@ body {
 .btn:hover {
     background: #333;
 }
-.inicio {
+
+
+#inicio {
+    padding: 100px 10%;
+}
+
+.inicio-contenedor {
     display: flex;
-    flex-direction: row;   /* pone imagen y texto lado a lado */
     align-items: center;
     justify-content: center;
-    gap: 2rem;             /* separación entre imagen y texto */
-    padding: 2rem;
+    gap: 60px;
 }
-.inicio img{
-   width:"200px";
+
+.presentacion {
+    max-width: 500px;
 }
+
+.imagen-inicio img {
+    width: 350px;
+}
+
 /* =========================
    PRODUCTOS
 ========================= */
@@ -303,6 +313,7 @@ footer {
         display: block;
     }
 }
+
 
 
 
