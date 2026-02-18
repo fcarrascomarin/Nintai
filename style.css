@@ -184,6 +184,14 @@ body {
     flex-wrap: wrap;
     gap: 20px;
 }
+#perforaciones {
+    display: flex;
+    flex-direction: column;  /* apila verticalmente */
+    justify-content: center; /* centra vertical */
+    align-items: center;     /* centra horizontal */
+    text-align: center;      /* centra texto */
+    padding: 2rem;           /* espacio interno */
+}
 
 
 .perforaciones img{
@@ -286,6 +294,7 @@ footer {
         display: block;
     }
 }
+
 
 
 
