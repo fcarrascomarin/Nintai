@@ -153,8 +153,10 @@ body {
 
 .card img {
     width: 100%;
-    margin-bottom: 15px;
+    max-width: 250px;   /* 🔥 controla tamaño real */
+    height: auto;
 }
+
 
 .card h3 {
     font-weight: 500;
@@ -323,6 +325,7 @@ footer {
     }
 
 }
+
 
 
 
