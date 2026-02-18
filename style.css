@@ -271,6 +271,38 @@ body {
     cursor: pointer;
 }
 
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.slider button {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+
 /* =========================
    FOOTER
 ========================= */

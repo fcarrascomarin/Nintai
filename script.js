@@ -115,7 +115,20 @@ function enviarPerforaciones() {
     const numeroEnfermera = "56998920489"; // SIN +
     window.open(`https://wa.me/${numeroEnfermera}?text=${mensaje}`, "_blank");
 }
+function cambiarImagen(boton, direccion) {
 
+    const img = boton.parentElement.querySelector(".producto-img");
+    const imagenes = img.dataset.images.split(",");
+    let index = parseInt(img.dataset.index);
+
+    index += direccion;
+
+    if (index < 0) index = imagenes.length - 1;
+    if (index >= imagenes.length) index = 0;
+
+    img.src = imagenes[index];
+    img.dataset.index = index;
+}
 
 
 /* =========================
