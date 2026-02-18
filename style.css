@@ -312,10 +312,19 @@ footer {
     .menu-toggle {
         display: block;
     }
+
+
+
+    .inicio-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-inicio img {
+        width: 250px;
+    }
+
 }
-
-
-
 
 
 
