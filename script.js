@@ -57,14 +57,11 @@ function enviarWhatsApp() {
     window.open(url, "_blank");
 }
 
-function seleccionarDia(dia) {
-  const mensaje = document.getElementById("mensaje-agenda");
-  mensaje.innerHTML = `
-    <p>Elegiste <strong>${dia}</strong>.</p>
-        <a href="https://wa.me/56998920489" target="_blank">
-      Confirmar por WhatsApp
-    </a>
-  `;
+function enviarWhatsApp(dia) {
+  const numero = "56998920489"; // 🔥 CAMBIÁ ESTO POR TU NÚMERO
+  const mensaje = `Hola! Quiero agendar una perforación para el día ${dia}. ¿Está disponible?`;
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
 }
 
 
