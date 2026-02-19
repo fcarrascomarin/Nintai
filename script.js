@@ -61,7 +61,7 @@ function seleccionarDia(dia) {
   const mensaje = document.getElementById("mensaje-agenda");
   mensaje.innerHTML = `
     <p>Elegiste <strong>${dia}</strong>.</p>
-    <a href="https://wa.me/56998920489" target="_blank">
+        <a href="https://wa.me/56998920489" target="_blank">
       Confirmar por WhatsApp
     </a>
   `;
