@@ -289,7 +289,7 @@ body {
     width: 100%;
     max-width: 260px;
     height: 260px;              /* 🔥 altura fija uniforme */
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
