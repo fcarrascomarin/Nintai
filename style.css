@@ -189,6 +189,9 @@ body {
     color: #fff;
 }
 
+
+
+
 /* =========================
    IDENTIDAD
 ========================= */
@@ -275,20 +278,30 @@ body {
     cursor: pointer;
 }
 
-.slider {
-    position: relative;
-    width: 100%;
+.card {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.producto-img {
+.slider {
+    position: relative;
     width: 100%;
-    max-width: 260px;   /* 🔥 tamaño real controlado */
-    height: auto;
-    display: block;
+    max-width: 260px;
+    height: 260px;              /* 🔥 altura fija uniforme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.producto-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;        /* 🔥 mantiene proporción */
+}
+
+
 
 .slider button {
     position: absolute;
