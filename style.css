@@ -144,11 +144,7 @@ body {
     font-size: 28px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
+
 
 .card {
     display: flex;
@@ -195,30 +191,6 @@ body {
 
 
 
-/* =========================
-   IDENTIDAD
-========================= */
-.identidad {
-    padding: 80px 20%;
-    text-align: center;
-    background: #f8f8f8;
-}
-
-.identidad h2 {
-    margin-bottom: 20px;
-}
-
-/* =========================
-   BENEFICIOS
-========================= */
-.beneficios {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 10%;
-    font-weight: 500;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 #perforaciones {
     padding: 100px 10%;
