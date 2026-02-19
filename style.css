@@ -286,7 +286,6 @@ body {
 
 .slider {
     position: relative;
-    width: 100%;
     max-width: 260px;
     height: 260px;              /* 🔥 altura fija uniforme */
     display: inline-flex;
