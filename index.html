@@ -55,7 +55,8 @@
 
 <section class="productos" id="productos">
     <h2>Lo que está brillando ahora</h2>
-    <div class="card-group">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
     <div class="card">
     
     <div class="slider">
@@ -89,6 +90,8 @@
             
             <button onclick="agregarAlCarrito('Set Aros Minimalista Estrellas Circones',24900)">Agregar</button>
         </div>
+</div>
+        <div class="col">
 
         <div class="card">
     
@@ -105,6 +108,10 @@
             <button onclick="agregarAlCarrito('Aro Serpiente',10900)">Agregar</button>
         </div>
 
+        </div>
+        <div class="col">
+
+
         <div class="card">
     
     <div class="slider">
@@ -120,6 +127,8 @@
             <p>Incluye 1 par de aros y un colgante (la cadena se vende por separado)<p>
             <button onclick="agregarAlCarrito('Conjunto Luna',27900)">Agregar</button>
         </div>
+</div>
+        <div class="col">
 
         <div class="card">
     
@@ -136,6 +145,9 @@
              
             <button onclick="agregarAlCarrito('Conjunto Mariposa',16900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -150,6 +162,9 @@
             <p class="precio">$15900</p>
             <button onclick="agregarAlCarrito('Aro Flor Circonesi',15990)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -164,6 +179,9 @@
             <p class="precio">$19900</p>
             <button onclick="agregarAlCarrito('Anillo Ajustable Corazones Circones Rubi',19900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -178,6 +196,8 @@
             <p class="precio">$21900</p>
             <button onclick="agregarAlCarrito('Anillo Ajustable Media Luna',21900)">Agregar</button>
         </div>
+</div>
+        <div class="col">
 
 
         <div class="card">
@@ -194,6 +214,9 @@
             <p class="precio">$13900</p>
             <button onclick="agregarAlCarrito('Argollas Bali Trenzada 16 mm',13900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -208,6 +231,9 @@
             <p class="precio">$15900</p>
             <button onclick="agregarAlCarrito('Argollas Atrapasueños 16 mm',15900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
 <div class="card">
     
     <div class="slider">
@@ -222,6 +248,9 @@
             <p class="precio">$13900</p>
             <button onclick="agregarAlCarrito('Argolla Nudo 16 mm',13900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -236,6 +265,9 @@
             <p class="precio">$15900</p>
             <button onclick="agregarAlCarrito('Aro Estrella de Mar 12 mm',15900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -250,6 +282,9 @@
             <p class="precio">$10900</p>
             <button onclick="agregarAlCarrito('Argolla Túnel',10900)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
         <div class="card">
     
     <div class="slider">
@@ -264,6 +299,9 @@
             <p class="precio">$8990</p>
             <button onclick="agregarAlCarrito('Argollas lisa 10 mm',9990)">Agregar</button>
         </div>
+        </div>
+        <div class="col">
+
          <div class="card">
     
     <div class="slider">
@@ -277,7 +315,8 @@
             <h3>Argolla lisa 8 mm</h3>
             <p class="precio">$7990</p>
             <button onclick="agregarAlCarrito('Argollas lisa 8 mm',8990)">Agregar</button>
-        </div>           
+        </div>  
+        </div>         
 
     </div>
     
@@ -304,15 +343,7 @@
                                 Agenda o consulta vía WhatsApp.</p> 
                     </div>
                     
-                     <div>
-                     <h2>Agenda de Perforaciones</h2>
-                        <ul id="lista-perforaciones"></ul>
-                        <p class="total">Total: $<span id="total-perforaciones">0</span></p>
-                        <button class="btn-wsp" onclick="enviarPerforaciones()">
-                            Reservar por WhatsApp
-                        </button>
-                    </div>
-                    <div>
+                      <div>
                         <p class="card-title d-block"><a href="https://www.instagram.com/carepierce.ccp" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>Care.pierce
                                 </a>
@@ -323,7 +354,20 @@
                     </div>
                 </div>
             </div>
-        </div>             
+        </div>
+          <section id="agendar" class="col-md-4">
+  <h2>Agenda tu perforación</h2>
+  <p>Selecciona el día disponible para coordinar:</p>
+
+  <div class="dias">
+    <button onclick="seleccionarDia('Viernes')">Viernes</button>
+    <button onclick="seleccionarDia('Sábado')">Sábado</button>
+    <button onclick="seleccionarDia('Domingo')">Domingo</button>
+  </div>
+
+  <div id="mensaje-agenda" class="mensaje-agenda"></div>
+</section>
+   
 </div>      
 
        

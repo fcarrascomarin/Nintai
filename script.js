@@ -57,64 +57,18 @@ function enviarWhatsApp() {
     window.open(url, "_blank");
 }
 
-
-
-/* =========================
-   CARRITO PERFORACIONES
-========================= */
-
-let perforaciones = [];
-let totalPerforaciones = 0;
-
-function agregarPerforacion(nombre, precio) {
-    perforaciones.push({ nombre, precio });
-    totalPerforaciones += precio;
-    actualizarCarritoPerforaciones();
+function seleccionarDia(dia) {
+  const mensaje = document.getElementById("mensaje-agenda");
+  mensaje.innerHTML = `
+    <p>Elegiste <strong>${dia}</strong>.</p>
+    <a href="https://wa.me/56998920489" target="_blank">
+      Confirmar por WhatsApp
+    </a>
+  `;
 }
 
-function actualizarCarritoPerforaciones() {
-    const lista = document.getElementById("lista-perforaciones");
-    const totalElemento = document.getElementById("total-perforaciones");
 
-    if (!lista || !totalElemento) return;
 
-    lista.innerHTML = "";
-
-    perforaciones.forEach((item, index) => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-            ${item.nombre} - $${item.precio}
-            <button onclick="eliminarPerforacion(${index})">X</button>
-        `;
-        lista.appendChild(li);
-    });
-
-    totalElemento.textContent = totalPerforaciones;
-}
-
-function eliminarPerforacion(index) {
-    totalPerforaciones -= perforaciones[index].precio;
-    perforaciones.splice(index, 1);
-    actualizarCarritoPerforaciones();
-}
-
-function enviarPerforaciones() {
-    if (perforaciones.length === 0) {
-        alert("No hay perforaciones seleccionadas.");
-        return;
-    }
-
-    let mensaje = "Hola, quiero agendar las siguientes perforaciones:%0A";
-
-    perforaciones.forEach(item => {
-        mensaje += `• ${item.nombre} - $${item.precio}%0A`;
-    });
-
-    mensaje += `%0ATotal: $${totalPerforaciones}`;
-
-    const numeroEnfermera = "56998920489"; // SIN +
-    window.open(`https://wa.me/${numeroEnfermera}?text=${mensaje}`, "_blank");
-}
 function cambiarImagen(boton, direccion) {
 
     const img = boton.parentElement.querySelector(".producto-img");
