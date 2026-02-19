@@ -108,17 +108,39 @@ body {
     background: #333;
 }
 
-
 #inicio {
     padding: 100px 10%;
+}
+
+.inicio-titulo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.inicio-titulo h1 {
+    font-size: 42px;
+    font-weight: 500;
 }
 
 .inicio-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
 }
+
+.inicio-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.inicio-texto {
+    max-width: 400px;
+    text-align: center;
+}
+
+
 
 .presentacion {
     max-width: 100%;
