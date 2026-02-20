@@ -232,7 +232,7 @@ body {
 .redes-perforaciones {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
     margin-top: 15px;
     align-items: center;
 }
