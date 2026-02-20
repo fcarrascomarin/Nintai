@@ -419,6 +419,15 @@ footer {
         width: 250px;
     }
 
+    .inicio-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-imagen img {
+        max-width: 250px;
+    }
+
 }
 
 
