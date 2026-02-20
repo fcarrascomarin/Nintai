@@ -135,6 +135,7 @@ body {
 .inicio-texto {
     text-align: center;
     text-decoration: solid;
+    gap: 40px;
 }
 .inicio img {
     width: 200px;
