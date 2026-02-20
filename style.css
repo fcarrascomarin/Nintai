@@ -237,6 +237,7 @@ body {
     color: #111;
     font-weight: 500;
     transition: 0.3s;
+    display: block;
 }
 
 .redes-perforaciones a:hover {
