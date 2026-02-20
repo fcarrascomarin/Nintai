@@ -126,25 +126,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 100px;
 }
 
-.inicio-imagen img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
+
 
 .inicio-texto {
-    max-width: 400px;
+
     text-align: center;
 }
 
 
 
-.presentacion {
-    max-width: 100%;
-}
+
 
 
 /* =========================
