@@ -137,7 +137,9 @@ body {
     text-decoration: solid;
 }
 .inicio img {
-    width: 300px;
+    width: 200px;
+    max-width: 400px;
+    height: auto;
 }
 
 
