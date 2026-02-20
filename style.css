@@ -171,8 +171,9 @@ body {
 
 .card img {
     width: 100%;
-    max-width: 250px;   /* 🔥 controla tamaño real */
+    max-width: 200px;   /* 🔥 controla tamaño real */
     height: auto;
+     margin-bottom: 10px;
 }
 
 
